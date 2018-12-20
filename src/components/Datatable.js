@@ -154,7 +154,7 @@ class Datatable extends React.Component {
 
     render() {
         return (
-            <Wrapper {...this.getStyleProps()}>
+            <Wrapper>
                 <Header
                     entriesToShow={this.state.entriesToShow}
                     searchInput={this.state.searchInput}
