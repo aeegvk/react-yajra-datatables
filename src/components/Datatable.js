@@ -154,7 +154,7 @@ class Datatable extends React.Component {
 
     render() {
         return (
-            <Wrapper>
+            <div>
                 <Header
                     entriesToShow={this.state.entriesToShow}
                     searchInput={this.state.searchInput}
@@ -175,7 +175,7 @@ class Datatable extends React.Component {
                     recordsTotal={this.state.recordsTotal}
                     dataLength={this.state.data.length}
                     refreshing={this.state.refreshing}/>
-            </Wrapper>
+            </div>
         );
     }
 }
