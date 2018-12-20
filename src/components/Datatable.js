@@ -3,7 +3,7 @@ import Header from './Header/Header';
 import Body from './Body/Body';
 import Footer from './Footer/Footer';
 import query from '../services/query';
-import Wrapper from './Wrapper';
+import Wrapper from './Wrapper.js';
 import { debounce } from 'lodash';
 
 const requestSearch = (value, regex = false) => ({
