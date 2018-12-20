@@ -17,7 +17,7 @@ const Pagination = ({ currentPage, pageCount, setPage }) => {
             pages.push(<PageItem number={(pageCount)} active={(currentPage === pageCount)} key={pageCount} setPage={setPage}/>);
         }
         return pages;
-    }
+    };
     return (
         <div className="page-row">
             <ChangePageButton
