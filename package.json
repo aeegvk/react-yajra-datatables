@@ -1,6 +1,6 @@
 {
   "name": "react-yajra-datatable",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "React component without dependencies to use with yajra laravel-datatables",
   "main": "src/index.js",
   "author": "Jann Peter Rocas (aeegvk@tabyog.com)",
