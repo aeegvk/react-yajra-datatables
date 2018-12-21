@@ -1,3 +1,3 @@
-import  DataTable  from './components/DataTable';
+import  DataTable  from './components/DataTable.js';
 
 export default DataTable;

@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
-import Header from './Header/Header';
-import Body from './Body/Body';
-import Footer from './Footer/Footer';
+import Header from './Header/Header.js';
+import Body from './Body/Body.js';
+import Footer from './Footer/Footer.js';
 import query from '../services/query';
 import debounce from 'lodash';
 
