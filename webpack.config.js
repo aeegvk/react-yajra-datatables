@@ -12,7 +12,7 @@ module.exports = {
     module: {
         rules: [
             {
-                test: /\.jsx?$/,
+                test: /\.js[x]?$/,
                 exclude: /node_modules/,
                 loaders: ['babel-loader?presets[]=react,presets[]=env'],
                 //loaders: ["react-hot", 'babel-loader'],
