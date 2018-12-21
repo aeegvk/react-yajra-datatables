@@ -3,7 +3,7 @@ require('webpack');
 module.exports = {
     context: __dirname + '/src',
     entry: {
-        javascript: "./index.js"
+        javascript: "./components/Datatable.js"
     },
     output: {
         filename: 'bundle.js',
