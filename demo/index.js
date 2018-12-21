@@ -1,10 +1,10 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Datatable from '../src';
+import DataTable from '../src';
 
 const App = () => (
     <div>
-        <Datatable
+        <DataTable
             url="http://localhost:8000/test"
             columns={[
                 { name: 'Resource', data: 'Resource' },

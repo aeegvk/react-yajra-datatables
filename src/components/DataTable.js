@@ -3,7 +3,7 @@ import Header from './Header/Header';
 import Body from './Body/Body';
 import Footer from './Footer/Footer';
 import query from '../services/query';
-import Wrapper from './Wrapper.js';
+import Wrapper from './Wrapper';
 import { debounce } from 'lodash';
 
 const requestSearch = (value, regex = false) => ({
@@ -16,7 +16,7 @@ const ASC = 'asc';
 const toggleDirection = (direction) => (direction === ASC) ? DESC : ASC;
 const DEBOUNCE_DELAY = 500;
 
-class Datatable extends React.Component {
+class DataTable extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -154,7 +154,7 @@ class Datatable extends React.Component {
 
     render() {
         return (
-            <div>
+            <Wrapper>
                 <Header
                     entriesToShow={this.state.entriesToShow}
                     searchInput={this.state.searchInput}
@@ -175,9 +175,9 @@ class Datatable extends React.Component {
                     recordsTotal={this.state.recordsTotal}
                     dataLength={this.state.data.length}
                     refreshing={this.state.refreshing}/>
-            </div>
+            </Wrapper>
         );
     }
 }
 
-export default Datatable;
+export default DataTable;

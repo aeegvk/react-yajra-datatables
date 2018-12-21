@@ -1,3 +1,3 @@
-import Datatable from './components/Datatable';
+import  DataTable  from './components/DataTable';
 
-export default Datatable;
+export default DataTable;
