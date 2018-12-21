@@ -1,10 +1,9 @@
-import React from 'react';
+import React, {Component} from 'react';
 import Header from './Header/Header';
 import Body from './Body/Body';
 import Footer from './Footer/Footer';
 import query from '../services/query';
-import Wrapper from './Wrapper';
-import { debounce } from 'lodash';
+import debounce from 'lodash';
 
 const requestSearch = (value, regex = false) => ({
     value,
@@ -16,7 +15,7 @@ const ASC = 'asc';
 const toggleDirection = (direction) => (direction === ASC) ? DESC : ASC;
 const DEBOUNCE_DELAY = 500;
 
-class DataTable extends React.Component {
+export default class DataTable extends Component {
     constructor(props) {
         super(props);
         this.state = {
@@ -154,7 +153,7 @@ class DataTable extends React.Component {
 
     render() {
         return (
-            <Wrapper>
+            <div>
                 <Header
                     entriesToShow={this.state.entriesToShow}
                     searchInput={this.state.searchInput}
@@ -175,9 +174,7 @@ class DataTable extends React.Component {
                     recordsTotal={this.state.recordsTotal}
                     dataLength={this.state.data.length}
                     refreshing={this.state.refreshing}/>
-            </Wrapper>
+            </div>
         );
     }
 }
-
-export default DataTable;
